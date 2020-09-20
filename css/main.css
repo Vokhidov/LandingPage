@@ -1,0 +1,212 @@
+/***********Variables **************/
+:root{
+    --main-color: rgb(36,36,36);
+    --red-color: #c63e3f;
+}
+/*************** Fonts ****************/
+@font-face {
+    font-family: QuarionMedium;
+    src: url('/fonts/Quarion-Medium.woff');
+}
+@font-face {
+    font-family: QuarionBook;
+    src: url('/fonts/Quarion-Book.woff');
+}
+/***************Basic****************/
+.container{
+    max-width: 1440px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: QuarionBook, sans-serif;
+}
+a{
+    color:var(--main-color)
+}
+a:hover{
+    text-decoration: none;
+    color:var(--main-color)
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style-type: none;
+}
+section{
+    padding-top: 100px;
+}
+button{
+    border:none;
+}
+button:focus, button:active, .owl-prev:active, .owl-next:active, button:hover, i:hover, span:hover{
+    outline: none;
+  }
+  .owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover{
+    background-color: transparent
+  }
+  .carousel-icon{
+  width: 60px;
+  border: none;
+  height: 60px;
+  background-color: white;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  border-radius: 4px;
+  color: red;
+  z-index: 1;
+  font-size: 22px;
+  font-weight: 800;
+  }
+  .owl-next{
+      position: absolute;
+      right: 10px;
+  }
+  .owl-prev{
+    position: absolute;
+    left: 10px;
+}
+.owl-dots{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+}
+/********************** Header ***********/
+
+/************ Navbar ***************/
+nav{
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    align-items: center;
+}
+.navbar-list{
+    padding-top: 20px;
+}
+.navbar-link{
+    padding-left: 50px;
+    font-size: 16px;
+}
+.contact{
+    padding-right: 25px;
+}
+.navbar-item:last-child{
+    padding-left: 20px;
+}
+.navbar-language{
+    border-left: 1px solid rgb(84, 84, 84);
+    border-right: 1px solid rgb(84, 84, 84);
+    padding: 0 10px;
+}
+.logo-brand{
+    font-size: 45px;
+    font-family: QuarionMedium, sans-serif;
+    color: var(--red-color)
+}
+.contact-number{
+    font-family: QuarionMedium, sans-serif;
+}
+/****************** Banner *************/
+.banner{
+    background-image: url('/images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+}
+/********* Carousel items **************/
+.item-title{
+    font-family: QuarionMedium, sans-serif;
+    font-size: 55px;
+}
+.item-text{
+    font-size: 22px;
+    line-height: 1.8;
+    padding:30px 0 60px 0;
+    width: 45%;
+}
+.item-btn{
+    padding: 10px 25px;
+    background-color: var(--red-color);
+    color: white;
+    border-radius: 50px;
+    font-size: 18px;
+}
+.item-btn i{
+    padding-left: 10px;
+    color: red;
+    transform: rotate(0);
+}
+
+/****************** About *****************/
+.section-title {
+    font-family: QuarionMedium, sans-serif;
+    font-size: 28px;
+  }
+  
+  .about-img__text {
+    font-family: QuarionMedium, sans-serif;
+    font-size: 26px;
+    position: absolute;
+    top: 29%;
+    left: -12%;
+    color: rgb(158, 158, 158);
+    transform: rotate(-90deg);
+  }
+  
+  .about__img {
+    max-width: 100%;
+    margin-left: 40px;
+    object-fit: cover;
+    object-position: center;
+    min-height: 330px;
+  }
+  
+  .about-img::before {
+    content: "";
+    background-image: url("/images/kvadrat.png");
+    position: absolute;
+    top: 75%;
+    left: 3%;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+  }
+  
+  .about-text__info {
+    font-size: 18px;
+  }
+  
+  .about-text {
+    padding: 0 0 0 50px;
+  }
+  
+  .about-icon {
+    width: 70px;
+  }
+  
+  .category-card__text {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .category-card__img::before {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: rgb(158, 158, 158);
+    position: absolute;
+    left: 15px;
+    top: 75px;
+  }
+
+
+
+  /**************************************/
+  .cosmetic-card__text{
+      font-size: 17px;
+      font-family: 'Montserrat', sans-serif;
+  }
