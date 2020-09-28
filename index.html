@@ -1,165 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/ico" href="/icons/delivery (2).svg">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>LandingPage</title>
+  </head>
+  <body>
     <!-------------------- Header ------------------------>
     <header>
+      <div class="container">
+        <!---- Navbar ---->
+        <nav>
+          <div class="logo">
+            <h4 class="logo-brand">Logo</h4>
+          </div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">О нас</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Продукция</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link contact">Контакты</a>
+            </li>
+            <!---- Language ---->
+            <li class="dropdown">
+              <a
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="navbar-language"
+                >Русский <i class="icon-down-open"></i
+              ></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">O'zbek</a>
+                <a class="dropdown-item" href="#">English</a>
+              </div>
+            </li>
+            <!--- Contact --->
+            <li class="navbar-item">
+              <img src="/icons/phone.svg" class="contact-svg" width="20px" />
+              <span class="contact-number">+998 94 454-00-00</span>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </div>
+      <!--------------- Carousel ----------------------->
+      <div class="banner">
         <div class="container">
-            <!---- Navbar ---->
-          <nav>
-            <div class="logo">
-                <h4 class="logo-brand">Logo</h4>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="item-title" data-aos-duration="1500" data-aos="fade-right">
+                Здоровье вашей кожи
+              </div>
+              <div class="item-text" data-aos="fade-left" data-aos-duration="1500">
+                Медицинская косметика от известной фирмы ACM бориться с акне,
+                витилиго, контагиозным моллюском и другими заболеваниями кожи
+              </div>
+              <button class="item-btn" type="button" data-aos="fade-up" data-aos-duration="1000">
+                Заказать <i class="icon-right"></i>
+              </button>
             </div>
-            <ul class="navbar-list">
-                <li class="navbar-item"><a href="#" class="navbar-link">О нас</a></li>
-                <li class="navbar-item"><a href="#" class="navbar-link">Продукция</a></li>
-                <li class="navbar-item"><a href="#" class="navbar-link contact">Контакты</a></li>
-                <!---- Language ---->
-                <li class="dropdown">
-                    <a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="navbar-language">Русский <i class="icon-down-open"></i></a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <!--- Contact --->
-                <li class="navbar-item"><img src="/icons/phone.svg" class="contact-svg" width="20px"> <span class="contact-number">+998 94 454-00-00</span></li>
-            </ul>
-        </nav>  
-        </div>
-        <!--------------- Carousel ----------------------->
-        <div class="banner">
-            <div class="container">
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="item-title">
-                            Здоровье вашей кожи
-                        </div>
-                        <div class="item-text">
-                            Медицинская косметика от известной фирмы
-                            ACM бориться с акне, витилиго, контагиозным
-                            моллюском и другими заболеваниями кожи 
-                        </div>
-                        <button class="item-btn" type="button">Заказать <i class="icon-right"></i></button>
-                    </div>
-                    <div class="item">
-                        <div class="item-title">
-                            Здоровье вашей кожи
-                        </div>
-                        <div class="item-text">
-                            Медицинская косметика от известной фирмы
-                            ACM бориться с акне, витилиго, контагиозным
-                            моллюском и другими заболеваниями кожи 
-                        </div>
-                        <button class="item-btn" type="button">Заказать <i class="icon-right"><span></span></i></button>
-                    </div>
-                    <div class="item">
-                        <div class="item-title">
-                            Здоровье вашей кожи
-                        </div>
-                        <div class="item-text">
-                            Медицинская косметика от известной фирмы
-                            ACM бориться с акне, витилиго, контагиозным
-                            моллюском и другими заболеваниями кожи 
-                        </div>
-                        <button class="item-btn" type="button">Заказать <i class="icon-right"><span></span></i></button>
-                    </div>
-                </div>
+            <div class="item">
+              <div class="item-title" data-aos-duration="1500" data-aos="fade-right">
+                Здоровье вашей кожи
+              </div>
+              <div class="item-text" data-aos="fade-left" data-aos-duration="1500">
+                Медицинская косметика от известной фирмы ACM бориться с акне,
+                витилиго, контагиозным моллюском и другими заболеваниями кожи
+              </div>
+              <button class="item-btn" type="button" data-aos="fade-up" data-aos-duration="1000">
+                Заказать <i class="icon-right"><span></span></i>
+              </button>
             </div>
+            <div class="item">
+              <div class="item-title" data-aos-duration="1500" data-aos="fade-right">
+                Здоровье вашей кожи
+              </div>
+              <div class="item-text" data-aos="fade-left" data-aos-duration="1500">
+                Медицинская косметика от известной фирмы ACM бориться с акне,
+                витилиго, контагиозным моллюском и другими заболеваниями кожи
+              </div>
+              <button class="item-btn" type="button" data-aos="fade-up" data-aos-duration="1000">
+                Заказать <i class="icon-right"><span></span></i>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <!--------------------- О наc ------------------------------->
     <section id="about">
-        <div class="container">
-          <div class="row">
-          <div class="col-md-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" data-aos="zoom-in-left" data-aos-duration="1300">
             <div class="about-img">
               <div class="about-img__text">Beauty health</div>
-              <div class="about-img__image"><img src="/images/about-img.png" class="about__img"></div>
-           </div>
+              <div class="about-img__image">
+                <img src="/images/about-img.png" class="about__img" />
+              </div>
+            </div>
           </div>
-           <div class="col-md-8">
-             <div class="about-text">
+          <div class="col-md-8" data-aos="fade-left" data-aos-duration="1600">
+            <div class="about-text">
               <div class="section-title">О нас</div>
-              <p class="about-text__info">Совместное предприятие «Uz-Korea Medical»  ведет свою успешную деятельность на рынке
-                Узбекистана начиная с 2003 года. За этот период предприятие зарекомендовало себя как
-                ответственный и не останавливающийся в развитии производитель медицинской и косметической
-                продукции самого высокого уровня, отвечающей всем мировым стандартам качества и, конечно
-                же, запросам отечественного потребителя</p>
-                <div class="about-text__category">
-                  <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                      <div class="category-card">
-                        <div class="category-card__img"><img class="about-icon" src="/icons/delivery (2).svg" alt=""></div>
-                        <div class="category-card__text">Бесплатная доствака <br> по Узбекистану</div>
+              <p class="about-text__info">
+                Совместное предприятие «Uz-Korea Medical» ведет свою успешную
+                деятельность на рынке Узбекистана начиная с 2003 года. За этот
+                период предприятие зарекомендовало себя как ответственный и не
+                останавливающийся в развитии производитель медицинской и
+                косметической продукции самого высокого уровня, отвечающей всем
+                мировым стандартам качества и, конечно же, запросам
+                отечественного потребителя
+              </p>
+              <div class="about-text__category">
+                <div class="row">
+                  <div class="col-md-4 col-sm-6">
+                    <div class="category-card" data-aos="fade-in" data-aos-duration="1000">
+                      <div class="category-card__img">
+                        <img
+                          class="about-icon"
+                          src="/icons/delivery (2).svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="category-card__text">
+                        Бесплатная доствака <br />
+                        по Узбекистану
                       </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                      <div class="category-card">
-                        <div class="category-card__img"><img class="about-icon" src="/icons/safe.svg" alt=""></div>
-                        <div class="category-card__text">Только качественная <br> продукция</div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <div class="category-card" data-aos="fade-in" data-aos-duration="1000">
+                      <div class="category-card__img">
+                        <img class="about-icon" src="/icons/safe.svg" alt="" />
+                      </div>
+                      <div class="category-card__text">
+                        Только качественная <br />
+                        продукция
                       </div>
                     </div>
-                    <div class="col-md-4">
-                      <div class="category-card">
-                        <div class="category-card__img"><img class="about-icon" src="/icons/discount (1).svg" alt=""></div>
-                        <div class="category-card__text">Выгодные цены<br> на все</div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="category-card" data-aos="fade-in" data-aos-duration="1000">
+                      <div class="category-card__img">
+                        <img
+                          class="about-icon"
+                          src="/icons/discount (1).svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="category-card__text">
+                        Выгодные цены<br />
+                        на все
                       </div>
                     </div>
                   </div>
                 </div>
-             </div>
-           </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-<!---------------- Медицинская косметика --------------------------->
-<section id="cosmetic">
-    <div class="container">
+    <!---------------- Медицинская косметика --------------------------->
+    <section id="cosmetic">
+      <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <div class="cosmetic-card">
-                    <div class="cosmetic-card__text">Содержит активные
-                        природные компоненты.
-                        Не вызывает аллергию!</div>
-                     </div>
-                     <button class="item-btn" type="button">Посмотреть все <i class="icon-right"><span></span></i></button>
+          <div class="col-md-3">
+            <div class="cosmetic-card">
+              <div class="cosmetic-card__text">
+                Содержит активные природные компоненты. Не вызывает аллергию!
+              </div>
             </div>
-            <div class="col-md-9">
-                
+            <button class="myitem-btn" type="button">
+              Посмотреть все <i class="icon-right"><span></span></i>
+            </button>
+          </div>
+          <div class="col-md-9">
+            <div class="cosmetic-carousel">
+              <div class="section__title">
+                Медицинская косметика
+              </div>
+              <div class="med-carousel">
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/med1.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">Sebionex крем от акне</div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/med2.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">Vitex крем от витилиго</div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/med3.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">
+                    Molutrex средство от <br />
+                    контагиозного моллюска
+                  </div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/med1.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">Sebionex крем от акне</div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/med2.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">Vitex крем от витилиго</div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/med3.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">
+                    Molutrex средство от <br />
+                    контагиозного моллюска
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!------------------  Гигиенические средства---------------------------->
+    <section id="cosmetic" class="gigiyena">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="cosmetic-carousel">
+              <div class="section__title">
+                Медицинская косметика
+              </div>
+              <div class="med-carousel">
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/gigiyena1.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">Sebionex крем от акне</div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/gigiyena2.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">Vitex крем от витилиго</div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/gigiyena3.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">
+                    Molutrex средство от <br />
+                    контагиозного моллюска
+                  </div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/gigiyena1.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">Sebionex крем от акне</div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/gigiyena2.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">Vitex крем от витилиго</div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/gigiyena3.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">
+                    Molutrex средство от <br />
+                    контагиозного моллюска
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="cosmetic-card">
+              <div class="cosmetic-card__text">
+                Содержит активные природные компоненты. Не вызывает аллергию!
+              </div>
+            </div>
+            <button class="myitem-btn" type="button">
+              Посмотреть все <i class="icon-right"><span></span></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!---------------- Аксессуары --------------------------->
+    <section id="cosmetic accessories">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="cosmetic-card">
+              <div class="cosmetic-card__text">
+                Качественная продукция для вашего здоровья!
+              </div>
+            </div>
+            <button class="myitem-btn" type="button">
+              Посмотреть все <i class="icon-right"><span></span></i>
+            </button>
+          </div>
+          <div class="col-md-9">
+            <div class="cosmetic-carousel">
+              <div class="section__title">
+                Аксессуары
+              </div>
+              <div class="med-carousel">
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/item1.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">Sebionex крем от акне</div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/item2.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">Vitex крем от витилиго</div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/item3.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">
+                    Molutrex средство от <br />
+                    контагиозного моллюска
+                  </div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/item1.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">Sebionex крем от акне</div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/item2.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">Vitex крем от витилиго</div>
+                </div>
+                <div class="myitem">
+                  <div class="myitem-img">
+                    <img src="/images/item3.png" class="med__img" />
+                  </div>
+                  <div class="myitem-text">
+                    Molutrex средство от <br />
+                    контагиозного моллюска
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!---------------- Footer ------------------------>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-logo">
+              <div class="footer-logo__title">Logo</div>
+              <div class="footer-logo__social">
+                <img src="/icons/facebook.svg">
+                <img src="/icons/instagram.svg">
+                <img src="/icons/telegram.svg">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <ul class="footer-list">
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Продукция</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-contacts">
+              <div class="footer-contact__title">Контакты</div>
+              <p class="footer-contact__number">+998 94 454-00-00</p>
+              <p class="footer-contact__adress">Ташкент, Яшнабадский ра-он <br> ул. Амира Темура</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-work">
+              <div class="footer-contact__title">Режим работы</div>
+              <h6 class="footer-contact__number">Пн-пт 9:00-18:00 <br> Сб 10:00-17:00</h6>
+            </div>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-info">
+          <p>2020 © Все права защищены</p>
+          <span>Разработка сайта: <strong class="footer-contact__title">Online Service Group</strong> </span>
+        </div>
+      </div>
+      </div>
+    </footer>
 
-
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+  <!------------- Script links ----------------->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js"
+      integrity="sha512-wDH73bv6rW6O6ev5DGYexNboWMzBoY+1TEAx5Q/sdbqN2MB2cNTG9Ge/qv3c1QNvuiAuETsKJnnHH2UDJGmmAQ=="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
